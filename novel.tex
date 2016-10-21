@@ -1,0 +1,43 @@
+\documentclass[a4paper,12pt,twoside]{book}
+
+\title{Epic Novel Title}
+\author{Todd Beckman}
+
+\input{preamble}
+
+% Remove all runes not directly related to the story by removing the % from of the next line.
+% \manuscript
+
+\begin{document}
+
+\maketitle
+\intro
+
+% -----------------------------------------------
+% Beginning of the novel.
+% Start editing below this line.
+% -----------------------------------------------
+
+\chapter{A Fancy First Chapter}
+  \import{1/}{scene-1}
+  \scenedivider
+  \import{1/}{scene-2}
+
+\chapter{A Shocking Second Chapter}
+  \import{2/}{scene-1}
+
+\chapter{A Thrilling Third Chapter}
+  \import{3/}{scene-1}
+
+\chapter{A Phenomenal Fourth Chapter}
+  \import{4/}{scene-1}
+
+\chapter{A Regrettable Last Chapter}
+  \import{5/}{scene-1}
+
+% -----------------------------------------------
+% End of the novel.
+% Do not edit below this line.
+% -----------------------------------------------
+
+\end{document}

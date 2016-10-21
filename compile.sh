@@ -1,0 +1,1 @@
+pdflatex -aux-directory=build novel.tex

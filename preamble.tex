@@ -1,0 +1,36 @@
+\date{}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{import}
+\usepackage{hyperref}
+
+% The rune used between
+\newcommand\scenedividerrune{
+  *\hspace{4cm}*\hspace{4cm}*
+}
+
+% Produces a divider between scenes
+\newcommand\scenedivider{
+  \vspace{3mm}
+  \begin{center}\scenedividerrune\end{center}
+  \vspace{3mm}
+}
+
+% Insert the introduction page
+\newcommand\intro{\input{intro}}
+
+% Remove all runes not directly related to the story
+\newcommand\manuscript{
+  % No introduction
+  \renewcommand\intro{}
+
+  % Use # to divide scenes
+  \renewcommand\scenedividerrune{\#}
+
+  % No page numbers
+  \pagestyle{empty}
+  \usepackage{etoolbox}
+  \patchcmd{\chapter}{plain}{empty}{}{}
+  \patchcmd{\part}{plain}{empty}{}{}
+}
