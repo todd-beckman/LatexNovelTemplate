@@ -32,7 +32,7 @@ Get a text editor or LaTeX editor if you don't have one. I personally use Vim (n
 
     - To insert a story `.tex` file use `\import{Folder_Name/}{FileName}`, where `FileName` does not have the `.tex` file ending.
 
-    - To insert a divider between scenes, use `\scenedivider
+    - To insert a divider between scenes, use `\scenedivider`
 
     - Spacing is not important, so feel free to format however it is readable to you.
 
